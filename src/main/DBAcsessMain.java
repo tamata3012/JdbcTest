@@ -1,7 +1,6 @@
 package main;
 
 import java.sql.Connection;
-import java.sql.SQLException;
 
 import department.dao.DepartmentDAO;
 import employee.dao.EmployeeDAO;
@@ -11,9 +10,9 @@ public class DBAcsessMain {
 	/**
 	 * DAOの各SQLをそれぞれ実行する
 	 * @param args
-	 * @throws SQLException
+	 * @throws Exception 
 	 */
-	public static void main(String[] args) throws SQLException {
+	public static void main(String[] args) throws Exception {
 		
 		try (Connection con=ConnectionManager.getConnection();){
 			
